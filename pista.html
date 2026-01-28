@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pista</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+    body {
+      transition: background-color 0.5s ease;
+    }
+  </style>
+  <script>
+    const colors = ["#0057B7", "#FFD700"];
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    document.addEventListener("DOMContentLoaded", () => {
+      document.body.style.backgroundColor = randomColor;
+    });
+  </script>
+</head>
+<body>
+</body>
+</html>
